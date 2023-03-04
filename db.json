@@ -1,0 +1,65 @@
+{
+  "offer": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "company": "typicode",
+      "date": "typicode",
+      "location": "typicode",
+      "state": false
+    },
+    {
+      "title": "Djjjjj",
+      "company": "jjhh",
+      "date": "hhhhh",
+      "location": "gggg",
+      "state": true,
+      "id": 2
+    },
+    {
+      "title": "Fjjjjj",
+      "date": "jjjj",
+      "company": "jjjj",
+      "location": "rrr",
+      "id": 3
+    },
+    {
+      "title": "Hjfd",
+      "company": "hhllfk",
+      "date": "hhh",
+      "location": "dddd",
+      "id": 4
+    },
+    {
+      "title": "Hjj",
+      "company": "hhhh",
+      "date": "hhh",
+      "location": "g",
+      "id": 5
+    },
+    {
+      "state": false,
+      "title": "Ghh",
+      "company": "ggg",
+      "date": "fff",
+      "location": "hhh",
+      "id": 6
+    },
+    {
+      "state": false,
+      "title": "Hggg",
+      "company": "jjj",
+      "date": "hhh",
+      "location": "hhh",
+      "id": 7
+    },
+    {
+      "state": true,
+      "title": "Dggg",
+      "company": "jjj",
+      "date": "jjj",
+      "location": "k",
+      "id": 8
+    }
+  ]
+}

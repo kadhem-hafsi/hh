@@ -1,0 +1,48 @@
+
+<div class="container">
+    <form #f="ngForm">
+           
+            <div>
+                <label>title</label>
+                <input type="text" name="title" required [(ngModel)]="offer.title" pattern="^[A-Z].+[a-z]" #t="ngModel">
+                <div *ngIf="t.touched && t.invalid">
+                    <div *ngIf="t.errors?.['required']">is required</div>
+                    <div *ngIf="t.errors?.['pattern']">ddoit comencer par lettr majuscule</div>
+                </div>
+            </div>
+            
+            <div>
+                <label>company</label>
+                <input type="text" name="company" required [(ngModel)]="offer.company" #c="ngModel">
+                <div *ngIf="c.touched && c.invalid">
+                    <div *ngIf="c.errors?.['required']">is required</div>
+                </div>
+            </div>
+
+            <div>
+                <label>date</label>
+                <input type="text" name="date" required [(ngModel)]="offer.date" #d="ngModel">
+                <div *ngIf="d.touched && d.invalid">
+                    <div *ngIf="d.errors?.['required']">is required</div>
+                </div>
+            </div>
+    
+            <div>
+                <label>location</label>
+                <input type="text" name="location" required [(ngModel)]="offer.location" #l="ngModel">
+                <div *ngIf="l.touched && l.invalid">
+                    <div *ngIf="l.errors?.['required']">is required</div>
+                </div>
+            </div>
+
+            <div>
+                <label>state</label><br>
+                <input type="checkbox" name="state" [(ngModel)]="offer.state" #s="ngModel">
+            </div>
+    
+            <div>
+                <input type="submit"  value="ajouter" (click)="ajouter()" [disabled]="f.invalid">
+            </div>
+    </form>
+    </div>
+    

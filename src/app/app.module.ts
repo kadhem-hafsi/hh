@@ -4,13 +4,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ListComponent } from './list/list.component';
+import { AddComponent } from './add/add.component';
+import { DetailComponent } from './detail/detail.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListComponent,
+    AddComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,38 @@
+
+<div>
+
+    <form>
+        <div class="form-group">
+        <input type="text" name="chercher" placeholder="chercher un Offer" [(ngModel)]="chercher">
+        <button (click)="chercherOffer()">chercher</button>
+        </div>
+    </form>
+
+<table border="1" class="table">
+    <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>company</th>
+        <th>date</th>
+        <th>location</th>
+        <th>state</th>
+        <th>afecter</th>
+        <th>detail</th>
+        
+    </tr>
+    <tbody *ngFor="let o of offerList">
+        <tr *ngIf="o.state==true">
+            <td>{{o.id}}</td>
+            <td>{{o.title}}</td>
+            <td>{{o.company}}</td>
+            <td>{{o.date}}</td>
+            <td>{{o.location}}</td>
+            <td>{{o.state}}</td>
+            <td><button (click)="changerState(o)">changer</button></td>
+            <td><button [routerLink]="['/offer/',o.id]" >detail</button></td>
+            
+        </tr>
+    </tbody>
+</table>
+</div>
+
